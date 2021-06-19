@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>STUDENT PROFILE</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link href="./book.ico" rel="icon">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body{
+            font-weight: bold;
+            display: grid;
+            grid-template-rows: 10% 26% 1f%;
+            grid-template-columns: 15% 25% 25% 1fr;
+            height: 500px;
+            width: 100%;
+            background-color: rgb(4, 66, 77);
+        }
+        .logo {
+            /*LOGO*/
+            font-size: x-large;
+            color: white;
+            padding-left: 5%;
+            text-shadow: -2px 2px 4px black;   
+            background-color: rgb(2, 41, 48);  
+        }
+        .logo a{
+            /*LOGO*/
+            color: white;
+            font-size: 20px;
+            
+        }
+        .nav_link{
+            grid-row: 1;
+            grid-column: 4;
+            font-size: smaller;
+            background-color:rgb(2, 41, 48);
+            padding-top:1%;
+            padding-left:50%;
+        }
+        .nav{
+            color: rgb(153, 241, 111);
+            padding: 2%;
+            width: 2%;
+            text-decoration: none;
+            text-shadow: -2px 2px 4px black;
+            background-color: rgb(2, 41, 48);
+        }       
+        .optbutton{
+            color: greenyellow;
+            font-weight: 500;
+            background-color: rgb(7, 48, 41);
+            border-radius: 32%;
+            box-shadow: 1px 0px 1px 0px black;
+        }
+        .optbutton:hover{
+            color: greenyellow;
+            font-weight: 500;
+            background-color: rgb(13, 76, 78);
+            border-radius: 32%;
+            box-shadow: 1px 2px 2px 0px black;
+            cursor: pointer;
+        }
+        li{
+            list-style-type: none;
+            color: rgb(255, 255, 255);
+            background-color:  rgb(2, 41, 48);
+            padding: 10%;
+        }
+        li a{
+            text-decoration: none;
+        }
+        li:hover{
+            background-color: rgb(3, 31, 37);
+            text-shadow: 1px 1px 1px black;
+            color: rgb(35, 224, 117);
+            
+        }
+        .active{
+            background-color: rgb(3, 31, 37);
+            text-shadow: 1px 1px 1px black;
+            color: rgb(35, 224, 117);
+        }
+        .infowid{
+            padding: 0.3%;
+            color: white;
+        }
+        .bodi{
+            grid-row: 3;
+            margin: 1%;
+            padding: 2%;
+            border-radius: 10px;
+            grid-column: 2/5;
+            box-shadow: 1px 1px 10px 2px black;
+            background-color: rgb(3, 40, 54);
+            color: white;
+        }
+        .box1{
+            grid-row: 2;
+            margin: 1%;
+            padding: 1%;
+            grid-column: 2/5;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px 2px black;
+            background-color: rgb(3, 40, 54);
+        } 
+        table{
+            width: 100%;
+            border: 1px solid rgb(13, 64, 80);
+        }
+        td,th{
+            text-align: left;
+           
+        }
+        th{
+            color: rgb(252, 87, 87);
+            border: 1px solid rgb(1, 7, 8);
+            background-color: rgb(3, 28, 39);
+            text-shadow: 1px 2px 3px rgb(0, 0, 0);
+        }
+        .search{
+            grid-row: 1;
+            grid-column: 2/4;
+            background-color: rgb(2, 41, 48);
+        }
+
+    </style>   
+    </head>
+    <body>
+        <div class="logo">
+            <a style="text-decoration: none;" href="#"><i style="padding: 2%;color: rgb(195, 18, 18);" class="fa fa-bolt" aria-hidden="true"></i>LIB<span style="font-style: italic; font-size: large; color: greenyellow;">WEB</span></a>
+        </div>
+        <div class="nav_link">
+            <ul>
+                <a class="nav"  href="settings.html"><i style="padding: 2%;"class="fa fa-asterisk" aria-hidden="true"></i>SETTINGS</a>
+            </ul>         
+        </div>
+       <div class="search" ></div>
+        </div>
+        <div style="background-color: rgb(3, 51, 53);grid-row: 2/4;grid-column: 1;">
+            <div >
+            <h3 style="text-shadow: 1px 3px 2px black; color: greenyellow; padding-left:15%;box-shadow: 2px 2px 2px 2px black;"><i class="fa fa-university" aria-hidden="true"></i></h3>
+                <li><a href="myprofile.html"><i style="padding: 2%;"class="fa fa-address-book" aria-hidden="true"></i>My Profile</a></li>
+                <li><a href="libraryinfoS.html"><i style="padding: 2%;"class="fa fa-user-circle" aria-hidden="true"></i>Library Info</a></li>
+                <li class="active"><a href="yourbooks.html"><i style="padding: 2%;"class="fa fa-book" aria-hidden="true"></i>Your books</a></li>
+                <li><a href="index.html"><i style="padding: 2%;"class="fa fa-user-circle" aria-hidden="true"></i>Login Out</a></li>
+                <li><a href="settings.html"><i style="padding: 2%;"class="fa fa-asterisk" aria-hidden="true"></i>Settings</a></li>
+            </div>
+        </div>
+        <div style="color: white;" class="box1">
+            <hr>
+            <div><b style="font-size:larger;text-shadow: 1px 3px 2px black;color: rgb(116, 255, 112);">ISSUE SECTION: </b></div>
+            <strong style="padding-left: 11%; color: rgb(255, 98, 98);">Student Id : </strong>{{current_user.username}}<br>
+            <strong style="padding-left: 11%; color: rgb(255, 98, 98);">Your Name : </strong>{{current_user.sname}}<br>
+            <strong style="padding-left: 11%; color: rgb(255, 98, 98);">Semester : </strong>{{current_user.ssem}} <br>
+            <hr>
+        </div> 
+        <div class="bodi">
+            <form action="/issuebook" method="POST">
+                <br>
+                <hr>
+                <div style="text-align: left; padding-left: 20px;">
+                    <strong style="font-size: larger; text-shadow:1.5px 1.5px 3px rgb(15, 79, 83); color: rgb(170, 255, 73);font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >Send Issue request</strong><br>
+                    <br><strong style="text-shadow: 0px 1px 3px rgb(119, 110, 110); color: rgb(255, 255, 255);"><b>Your User-Id : </b></strong>
+                    <input name="unique_id" type="text" placeholder="Student Id:"><br>
+                    <br><strong style=" text-shadow: 0px 1px 3px rgb(119, 110, 110); color: rgb(240, 251, 255);"><b>Subject : </b></strong>
+                    <input name="namebook" style="width: 300px;" type="text" placeholder="Subject is been issued!"><br>
+                    <br><strong style=" text-shadow: 0px 1px 3px rgb(119, 110, 110); color: rgb(255, 255, 255);"><b>Semester : </b></strong>
+                    <input name="booksem" style="width: 300px;" type="number" placeholder="SEMESTER">
+                    <br><br><button class="submi">Send Issue Request</button>
+                </div>
+            </form> 
+            <hr>
+            <b style="font-size:larger;text-shadow: 1px 3px 2px black;color: rgb(116, 255, 112);">Book You Issued: </b><br>
+            <hr>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Who Issued</th>
+                        <th>SUBJECT</th>
+                        <th>SEMESTER</th> 
+                    </tr> 
+                </thead>
+                
+                {% for book in ybook %}
+                    {% if book.yname == current_user.username %}
+                        <tr>
+                            <td>{{book.yname}}</td>
+                            <td>{{book.title}}</td>
+                            <td>{{book.bsem}}</td>
+                        </tr>
+                    {%endif%}
+                {% endfor %}
+            </table>
+            <hr>
+        </div>
+    </body>
+        <script type = "text/javascript" >  
+            function preventBack() { window.history.forward(); }  
+            setTimeout("preventBack()", 0);  
+            window.onunload = function () { null };  
+        </script>
+</html>
+<!--
+http://radixtouch.in/templates/admin/smart/source/dark/index.html
+-->

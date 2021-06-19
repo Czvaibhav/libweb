@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Login Form</title>
+    <link href="{{ url_for('static',filename='books-icon-512.png')}}" rel="icon">
+    <script src="{{ url_for('static',filename='js/test.js')}}" ></script>
+  <style>
+    body{
+    margin: 0;
+    border: 0;
+    background: url("{{ url_for('static',filename='bgimage.jpg')}}");
+    background-size: cover;
+    color: black;
+    }
+.Mydiv{
+    margin:200px auto;
+    border: 12px inset rgb(75, 97, 100);
+    padding: 40px;
+    text-align:right;
+    height: 354px;
+    width: 250px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color: white;
+}
+.button{
+    background-color: rgb(46, 46, 46);
+    color: white;
+    cursor: pointer;
+    border-radius: 12px;
+    margin:20px 20px;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-size: 20px;
+    border:2px solid rgb(139, 126, 126);
+    transition-duration:0.2ms;
+}
+.b1{
+    padding: 15px 30px;
+}
+.b1:hover{
+    background-color: grey;
+    box-shadow: 0 8px 16px 0 rgb(95, 89, 89);
+}
+.b2:hover{
+    background-color: grey;
+    box-shadow: 0 8px 16px 0 rgb(80, 75, 75);
+}
+.png{
+    width: 150px;
+    height:150px;
+    border-radius: 40%;
+    position: absolute;
+    top:90px;
+    left:calc(50% - 87px);
+    border:10px inset rgb(180, 9, 9);
+}
+  </style>
+ </head>
+    <body>
+    <div class="Mydiv">
+        <img src="{{ url_for('static',filename='loginpc.png')}}" class="png" >
+        <form action="studlogin.html">
+            <button class="button b1">Student Login<button> 
+        </form>    
+        <form action="teacherlogin.html"> 
+            <button class="button b1">Teacher Login<button> 
+        </form>
+        <form action="studform.html">
+            <button class="button b2">New User / Don't have account ?<button>
+        </form>
+        
+    </div>
+  </body>
+</html>
+<!--
+http://radixtouch.in/templates/admin/smart/source/dark/index.html
+-->
