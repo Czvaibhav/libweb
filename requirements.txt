@@ -3,7 +3,6 @@ apturl==0.5.2
 autopep8==1.5.7
 bcrypt==3.1.7
 blinker==1.4
-Brlapi==0.7.0
 certifi==2019.11.28
 cfgv==3.3.0
 chardet==3.0.4
