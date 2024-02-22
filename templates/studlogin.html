@@ -1,80 +1,86 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="https://www.graphicsfuel.com/wp-content/uploads/2012/07/books-icon-512.png" rel="icon">
-    <style>
-    
-      body{
-    margin: 0;
-    border: 0;
-    background: url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8bGlicmFyeXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
-    background-size: cover;
-}
-.Mydiv{
-    margin:200px auto;
-    border: 12px inset rgba(236, 236, 236, 0.637);
-    padding: 40px;
-    text-align:right;
-    height: 354px;
-    width: 250px;
-    background-color: rgba(41, 36, 46, 0.767);
-    text-align: center;
-    color: white;
-}
-input[type=text],input[type=password]{
-    padding: 10px 10px;
-    margin: 20px;
-    background-color: blanchedalmond;
-    border-radius: 8px;
-}
-.loginbutton{
-    background-color:rgb(197, 207, 200);
-    padding: 10px;
-    width: 40%;
-    border-radius: 12px;
-    font-size: 20px;
-}
-.loginbutton:hover{
-  background-color: rgb(173, 159, 159);
-    padding: 10px;
-    width: 40%;
-    border-radius: 12px;
-    font-size: 20px;
-    box-shadow: 1px 2px 4px 3px rgb(206, 223, 217);
-}
-    </style>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Student login</title>
-    <link href="studlogin.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <div class="Mydiv">
-        <form method="POST" action="/login">
-            <label style="font-weight:600;font-size: 20px;"  for="fname" >Student Unique Code</label>
-            <input name="username" type="text" placeholder="Enter User Id">
-            <label style="font-weight:600;font-size: 20px;" for="pwd">Password</label>
-            <input name="password" id="patahogana" type="password" placeholder="Enter Password">
-            <label style="font-weight:600;font-size: 20px;margin-right:80px;" >
-            <input style="margin-right: 7px;" onclick="myFunction()" type="checkbox" remember="remember">Show me
-            </label>
-            <hr>    
-          <button class="loginbutton" type="text"><b>Login</b></button>
-        </form>  
-        <hr>      
-    </div>
-  </body>
-  <script>
-    function myFunction(){
-     var x;
-     x = document.getElementById("patahogana");
-          if(x.type == "password"){
-              x.type = "text";
-          }
-          else{
-              x.type = "password";
-          } 
-     }
-    </script>
-  
+
+<head>
+  <link href="https://www.graphicsfuel.com/wp-content/uploads/2012/07/books-icon-512.png" rel="icon">
+  <style>
+    body {
+      margin: 0;
+      border: 0;
+      background: url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8bGlicmFyeXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+      background-size: cover;
+    }
+
+    .Mydiv {
+      margin: 200px auto;
+      border: 12px inset rgba(236, 236, 236, 0.637);
+      padding: 40px;
+      text-align: right;
+      height: 354px;
+      width: 250px;
+      background-color: rgba(41, 36, 46, 0.767);
+      text-align: center;
+      color: white;
+    }
+
+    input[type=text],
+    input[type=password] {
+      padding: 10px 10px;
+      margin: 20px;
+      background-color: blanchedalmond;
+      border-radius: 8px;
+    }
+
+    .loginbutton {
+      background-color: rgb(197, 207, 200);
+      padding: 10px;
+      width: 40%;
+      border-radius: 12px;
+      font-size: 20px;
+    }
+
+    .loginbutton:hover {
+      background-color: rgb(173, 159, 159);
+      padding: 10px;
+      width: 40%;
+      border-radius: 12px;
+      font-size: 20px;
+      box-shadow: 1px 2px 4px 3px rgb(206, 223, 217);
+    }
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Student login</title>
+  <link href="studlogin.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="Mydiv">
+    <form method="POST" action="/login">
+      <label style="font-weight:600;font-size: 20px;" for="fname">Student Unique Code</label>
+      <input name="username" type="text" placeholder="Enter 'myuser' to login!">
+      <label style="font-weight:600;font-size: 20px;" for="pwd">Password</label>
+      <input name="password" id="patahogana" type="password" placeholder="Enter 'mypassword' to login!">
+      <label style="font-weight:600;font-size: 20px;margin-right:80px;">
+        <input style="margin-right: 7px;" onclick="myFunction()" type="checkbox" remember="remember">Show me
+      </label>
+      <hr>
+      <button class="loginbutton" type="text"><b>Login</b></button>
+    </form>
+    <hr>
+  </div>
+</body>
+<script>
+  function myFunction() {
+    var x;
+    x = document.getElementById("patahogana");
+    if (x.type == "password") {
+      x.type = "text";
+    }
+    else {
+      x.type = "password";
+    }
+  }
+</script>
+
 </html>
